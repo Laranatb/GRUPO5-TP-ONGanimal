@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header{
+    background: blue;
+    width: 100%;
+    padding:12px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img{
+    width: 30px;
+}
+
+header nav{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+header nav a{
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+header nav a:hover{
+    transition: all 0.1s;
+    transform: scale(1.1);
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+
+/* 
+    Esta clase esta echa para usarse como contenedora de las "cards"
+    sean cuadradas o redondas 
+
+    Estan de manera horiontal una de la otra
+*/
+
+.container-cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Esta es una clase para los titulos de las secciones 
+    Ocupan toda una fila de la paginas (100%)
+*/
+
+.title-section{
+    display:block;
+    width: 100%;
+    text-align: center;
+    padding: 0  0 40px 0;
+}
+
+/* 
+Esta es la clase principal o base de las cards 
+
+*/
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-icon{
+    width: 15%;
+    gap:10px;
+}
+
+.card-icon strong{
+    font-size: 20px;
+    letter-spacing: 1.2px;
+}
+
+.card-icon span{
+    text-align: center;
+    font-size: 15px;
+}
+
+
+
+.card-border {
+    border: 1px;
+}
+
+.button{
+    border: 1px;
+    border-radius: 12px;
+
+}
+
+/*PD: despues con mas tiempo les comento bien el codigo asi tienen una referencia de para que sirve
+pero bueno otro dia lo hago tkm <3
+*/
