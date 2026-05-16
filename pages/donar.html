@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
     <title>Donaciones</title>
 </head>
 
@@ -14,7 +15,7 @@
             <a href="../index.html">Inicio</a>
             <a href="./nosotros.html">Nosotros</a>
             <a href="./proyectos.html">Proyectos</a>
-            <a href="./eventos.html">Eventos</a>
+            <a href="./donar.html">Donar</a>
             <a href="./contacto.html">Contacto</a>
         </nav>
     </header>
@@ -24,35 +25,38 @@
             <div>
                 <h1>Tu ayuda cambia vidas</h1>
                 <p>Con tu donación, podemos seguir rescatando, cuidando y buscando hogares para más animales.</p>
-                <button>Quiero donar</button>
+                <button class="button button-black">Quiero donar</button>
             </div>
         </article>
         <!-- Sección de cómo puedes donar -->
-        <article>
-            <h2>¿Cómo puedes donar?</h2>
-            <div>
-                <div>
-                    <img src="" alt="icon-tarjeta" />
-                    <strong>Donación única</strong>
-                    <span>Elegí el monto y hace una donación por única vez.</span>
-                </div>
-                <div>
-                    <img src="" alt="icon-tarjeta" />
-                    <strong>Donación mensual</strong>
-                    <span>Sumate con un aporte mensual y ayúdanos a planificar mejor.</span>
-                </div>
-                <div>
-                    <img src="" alt="icon-tarjeta" />
-                    <strong>Transferencia bancaria</strong>
-                    <span>También puedes donar por transferencia o depósito bancario.</span>
-                </div>
-            </div>
+        <article class="container-cards">
+            <h2 class="title-section">¿Cómo puedes donar?</h2>
+            <section class="card card-icon">
+                <img src="../img/icons/card.svg" alt="icon-tarjeta" class="icon-medium" />
+                <strong>Donación única</strong>
+                <span>Elegí el monto y hace una donación por única vez.</span>
+            </section>
+            <section class="card card-icon">
+                <img src="../img/icons/refresh.svg" alt="icon-reload" class="icon-medium" />
+                <strong>Donación mensual</strong>
+                <span>Sumate con un aporte mensual y ayúdanos a planificar mejor.</span>
+            </section>
+            <section class="card card-icon">
+                <img src="../img/icons/bank.svg" alt="icon-tarjeta" class="icon-medium" />
+                <strong>Transferencia bancaria</strong>
+                <span>También puedes donar por transferencia o depósito bancario.</span>
+            </section>
         </article>
-        <!-- Cierre del main -->
-        <div>
-            <img src="" alt="icon-corazon" />
-            <strong>Cada aporte, por más pequeño que sea, marca una gran diferencia</strong>
-        </div>
+        <!-- Cierre del main / Aside -->
+        <aside>
+            <img src="../img/icons/heart.svg" alt="icon-corazon" class="icon-big" />
+            <div class="aside-content">
+                <strong>Cada aporte, por más pequeño que sea,
+                    <span>marca una gran diferencia</span>
+                </strong>
+
+            </div>
+        </aside>
     </main>
 
     <footer>
