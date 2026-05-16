@@ -2,17 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
+   
 }
 
 
 
+/* Header */
 header{
-    background: blue;
     width: 100%;
+    background: var(--color-primario-claro);
     padding:12px 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
 }
 
 header img{
@@ -26,6 +30,8 @@ header nav{
 }
 
 header nav a{
+    background: none;
+    color: var(--color-texto);
     font-size: 20px;
     text-decoration: none;
 
@@ -36,12 +42,123 @@ header nav a:hover{
     transform: scale(1.1);
 }
 
+/* Width */
+
+.w-full{
+    width: 100%;
+}
+
+.w-big{
+    width: 80%;
+}
+
+
+/* Icons */
+
+.icon-small{
+    width: 20px;
+
+}
+
+.icon-medium{
+    width: 60px;
+}
+
+.icon-big{
+    width: 80px;
+}
+/* Main */
+
 main{
     width: 100%;
     display: flex;
     flex-direction: column;
     gap:40px;
 }
+
+/* Aside */
+
+aside{
+    display: flex;
+    padding: 20px 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background: var(--color-primario-oscuro);
+}
+
+.aside-content{
+    width: 50%;
+}
+
+.aside-content strong{
+    font-size: 26px;
+}
+
+.aside-content span{
+    display: block;
+}
+
+
+/* Texto */
+
+.title-section{
+    display:block;
+    width: 100%;
+    text-align: center;
+    padding: 0  0 40px 0;
+}
+
+
+
+/* Button */
+
+.button{
+    padding: 10px 20px;
+    border: 1px ;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: all 200ms;
+}
+
+.button:hover{
+    transform: scale(1.15);
+}
+
+
+.button-white{
+    background: #5f855f;
+}
+
+.button-black{
+    background: rebeccapurple;   
+}
+
+/* Hero */
+
+.hero{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.hero-info{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.hero-info h1{
+    font-size: 40px;
+}
+
+.hero-info p{
+    font-size: 20px;
+}
+
+
 
 /* 
     Esta clase esta echa para usarse como contenedora de las "cards"
@@ -61,12 +178,7 @@ main{
     Ocupan toda una fila de la paginas (100%)
 */
 
-.title-section{
-    display:block;
-    width: 100%;
-    text-align: center;
-    padding: 0  0 40px 0;
-}
+
 
 /* 
 Esta es la clase principal o base de las cards 
@@ -101,12 +213,15 @@ Esta es la clase principal o base de las cards
     border: 1px;
 }
 
-.button{
-    border: 1px;
-    border-radius: 12px;
 
-}
 
 /*PD: despues con mas tiempo les comento bien el codigo asi tienen una referencia de para que sirve
 pero bueno otro dia lo hago tkm <3
 */
+
+
+/* Sobre nosotros */
+
+.nosotros{
+    width: 100%;
+}
