@@ -1,35 +1,42 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
-   
+    --color-bg: #E8E6DA;
+    --color-primario: #EBCE8F;
+    --color-secundario: #DABEEA;
+    --color-bg-primario: #E0CFB1;
+    --color-texto-oscuro: #363636;
+    --color-texto-claro: #E9E5D4;
 }
 
+a {
+    text-decoration: none;
+}
 
 
 /* Header */
-header{
+header {
     width: 100%;
     background: var(--color-primario-claro);
-    padding:12px 0;
+    padding: 12px 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+
 }
 
-header img{
+header img {
     width: 30px;
 }
 
-header nav{
+header nav {
     display: flex;
     width: 40%;
     justify-content: space-between;
 }
 
-header nav a{
+header nav a {
     background: none;
     color: var(--color-texto);
     font-size: 20px;
@@ -37,48 +44,48 @@ header nav a{
 
 }
 
-header nav a:hover{
+header nav a:hover {
     transition: all 0.1s;
     transform: scale(1.1);
 }
 
 /* Width */
 
-.w-full{
+.w-full {
     width: 100%;
 }
 
-.w-big{
+.w-big {
     width: 80%;
 }
 
 
 /* Icons */
 
-.icon-small{
+.icon-small {
     width: 20px;
-
 }
 
-.icon-medium{
+.icon-medium {
     width: 60px;
 }
 
-.icon-big{
+.icon-big {
     width: 80px;
 }
+
 /* Main */
 
-main{
+main {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap:40px;
+    gap: 40px;
 }
 
 /* Aside */
 
-aside{
+aside {
     display: flex;
     padding: 20px 40px;
     align-items: center;
@@ -87,74 +94,91 @@ aside{
     background: var(--color-primario-oscuro);
 }
 
-.aside-content{
+.aside-content {
     width: 50%;
 }
 
-.aside-content strong{
+
+.aside-content strong {
     font-size: 26px;
 }
 
-.aside-content span{
+.aside-content span {
     display: block;
 }
 
 
 /* Texto */
 
-.title-section{
-    display:block;
+.title-section {
+    display: block;
     width: 100%;
     text-align: center;
-    padding: 0  0 40px 0;
+    padding: 0 0 40px 0;
 }
 
+.text-xs {
+    font-size: 14px;
+
+}
+
+.text-sm {
+    font-size: 20px;
+}
+
+.text-lg {
+    font-size: 40px;
+}
+
+.text-xl {
+    font-size: 60px;
+}
 
 
 /* Button */
 
-.button{
+.button {
     padding: 10px 20px;
-    border: 1px ;
+    border: 1px;
     border-radius: 10px;
     font-size: 18px;
     transition: all 200ms;
 }
 
-.button:hover{
+.button:hover {
     transform: scale(1.15);
 }
 
 
-.button-white{
-    background: #5f855f;
+.button-white {
+    background: var(--color-bg-primario);
 }
 
-.button-black{
-    background: rebeccapurple;   
+.button-black {
+    background: var(--color-secundario);
 }
 
 /* Hero */
 
-.hero{
+.hero {
     width: 100%;
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
 }
 
-.hero-info{
+.hero-info {
     width: 35%;
     display: flex;
     flex-direction: column;
     align-items: start;
 }
 
-.hero-info h1{
+.hero-info h1 {
     font-size: 40px;
 }
 
-.hero-info p{
+.hero-info p {
     font-size: 20px;
 }
 
@@ -167,7 +191,7 @@ aside{
     Estan de manera horiontal una de la otra
 */
 
-.container-cards{
+.container-cards {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -185,24 +209,24 @@ Esta es la clase principal o base de las cards
 
 */
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.card-icon{
+.card-icon {
     width: 15%;
-    gap:10px;
+    gap: 10px;
 }
 
-.card-icon strong{
+.card-icon strong {
     font-size: 20px;
     letter-spacing: 1.2px;
 }
 
-.card-icon span{
+.card-icon span {
     text-align: center;
     font-size: 15px;
 }
@@ -219,3 +243,35 @@ Esta es la clase principal o base de las cards
 pero bueno otro dia lo hago tkm <3
 */
 
+.container-contacto {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.contacto-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 250px;
+}
+
+.contacto-info ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.contacto-info ul li {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    justify-content: start;
+}
+
+input {
+    width: 300px;
+    margin: 20px;
+    background: var(--color-texto-claro);
+}
