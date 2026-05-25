@@ -10,8 +10,8 @@
 
 <body>
     <header>
+        <a href="../index.html"><img class="icon-medium" src="../imagenes/logo-huella.png" alt="logo" /></a>
         <nav>
-            <img src="../imagenes/logo-huella.png" alt="logo" />
             <a href="../index.html">Inicio</a>
             <a href="./nosotros.html">Nosotros</a>
             <a href="./proyectos.html">Proyectos</a>
@@ -20,62 +20,70 @@
         </nav>
     </header>
     <main>
+
         <section class="container-contacto w-full">
+
             <article class="contacto-info">
+
                 <h1>Contactanos</h1>
-                <p>Estamos acá para resolver tus dudas, recibir sugerencias
-                    o que te sumes como voluntario</p>
+                <span id="text">Estamos acá para resolver tus dudas, recibir sugerencias
+                    o que te sumes como voluntario.</span>
+
                 <ul>
-                    <li><img src="../img/icons/phone.svg"><a href="https://whatsapp.com/">+54 11-348959023</a></li>
-                    <li><a href="info@onganimal.ong" target="_blank">info@onganimal.ong</a></li>
-                    <li><a href="https://https://www.google.com/maps" target="_blank"></a>Buenos Aires, Argentina</li>
-                    <li><span> Lunes a Viernes de 9 a 18hs</span></li>
+                    <li><img src="../img/icons/redes/whatsapp.svg"><a href="https://whatsapp.com/">+54 11-348959023</a>
+                    </li>
+                    <li><img src="../img/icons/redes/email.svg"><a href="info@onganimal.ong"
+                            target="_blank">info@onganimal.ong</a></li>
+                    <li><img src="../img/icons/sparkles-2.svg"><a href="https://maps.app.goo.gl/PYbRXFJZFZoabsKMA"
+                            target="_blank">Buenos Aires, Argentina</a></li>
+                    <li><img src="../img/icons/clock-check.svg"><span> Lunes a Viernes de 9 a 18hs</span></li>
                 </ul>
+
             </article>
-            <form action="post">
-                <input placeholder="Nombre y Apellido" type="text"><br>
-                <input placeholder="E-mail" type="email"><br>
-                <input placeholder="Asunto" type="text"><br>
-                <input placeholder="Mensaje" type="text"><br>
-                <button>Enviar</button>
-            </form>
+
+            <article>
+                <form action="post">
+                    <input placeholder="  Nombre y Apellido" type="text"><br>
+                    <input placeholder="  E-mail" type="email"><br>
+                    <input placeholder="  Asunto" type="text"><br>
+                    <textarea placeholder="  Mensaje" name="Mensaje" id=""></textarea>
+                    <!-- <input placeholder="  Mensaje" type="text"><br> -->
+                    <button class="button-enviar-form">Enviar</button>
+                </form>
+            </article>
+
         </section>
+
         <section>
-            <h2>¡Sumate como voluntario!</h2>
-            <p>Tu tiempo y compromiso también cambian vidas.</p>
-            <button>Quiero ser voluntario</button>
+            <div class="aside-box-contactos">
+                <h2>¡Sumate como voluntario!</h2>
+                <span id="text">Tu tiempo y compromiso, también cambian vidas.</span>
+                <button class=" button-enviar-form">Quiero ser voluntario</button>
+            </div>
         </section>
+
     </main>
+
     <footer>
-        <img src="../imagenes/logo-huella.png" alt="logo" />
-        <nav>
-            <div>
-                <ul>
-                    <li>
-                        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-                    </li>
-                    <li>
-                        <a href="https:/www.x.com/" target="_blank">Twitter</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="info@onganimal.ong" target="_blank">info@onganimal.ong</a>
-                        </li>
-                        <li>
-                            <a href="https://whatsapp.com/">+54 11-348959023</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </nav>
+        <div class="button-box">
+            <img class="icon-medium" src="../imagenes/logo-huella.png" alt="logo" />
+            <nav>
+                <a class="button-redes" href="https://www.facebook.com/" target="_blank"><img
+                        src="../img/icons/redes/facebook.svg"></a>
+                <a class="button-redes" href="https://www.instagram.com/" target="_blank"><img
+                        src="../img/icons/redes/instagram.svg"></a>
+                <a class="button-redes" href="https:/www.x.com/" target="_blank"><img
+                        src="../img/icons/redes/youtube.svg"></a>
+            </nav>
+        </div>
+        <div class="button-box">
+            <nav>
+                <a class="button-redes" href="info@onganimal.ong" target="_blank">info@onganimal.com</a>
+                <a class="button-redes" href="https://whatsapp.com/">+54 11-348959023</a>
+            </nav>
+        </div>
     </footer>
+
 </body>
 
 </html>

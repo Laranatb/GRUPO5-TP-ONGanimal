@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +10,10 @@
     --color-bg-primario: #E0CFB1;
     --color-texto-oscuro: #363636;
     --color-texto-claro: #E9E5D4;
+}
+
+body {
+    font-family: 'Open Sans';
 }
 
 a {
@@ -63,7 +69,7 @@ header nav a:hover {
 /* Icons */
 
 .icon-small {
-    width: 20px;
+    width: 40px;
 }
 
 .icon-medium {
@@ -77,7 +83,8 @@ header nav a:hover {
 /* Main */
 
 main {
-    width: 100%;
+    width: 100px 100px 100px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -245,33 +252,130 @@ pero bueno otro dia lo hago tkm <3
 
 .container-contacto {
     display: flex;
-    justify-content: space-around;
-
+    padding: 30px 30px 30px;
+    gap: 15%;
+    align-items: center first baseline;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: 100%;
 }
 
 .contacto-info {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    width: 250px;
+    gap: 30px;
+    width: 20%;
+    font-size: larger;
 }
 
 .contacto-info ul {
+    width: 200px;
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 8px
+    gap: 5px
 }
 
 .contacto-info ul li {
     display: flex;
     align-items: center;
-    gap: 3px;
-    justify-content: start;
+    margin-top: 10px;
+    gap: 15px;
+    width: 900%;
+}
+
+h1 {
+    font-size: xx-large;
+    background-color: var(--color-secundario);
+    padding: 10px;
+    text-align: center;
 }
 
 input {
-    width: 300px;
-    margin: 20px;
-    background: var(--color-texto-claro);
+    width: 400px;
+    background-color: #FFFF;
+    padding: 15px 0px;
+    justify-content: center;
+    align-items: first baseline;
+    border-radius: 15px;
+    border: solid black 2px;
+    margin-right: auto 100%;
+    font-size: large;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+textarea {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 15px 10px;
+    justify-content: center;
+    border: solid black 2px;
+    border-radius: 15px;
+
+}
+
+.button-enviar-form {
+    background-color: var(--color-secundario);
+    padding: 10px 15px;
+    border-radius: 10px;
+    border-color: #DABEEA;
+    font-size: 18px;
+    transition: all 200ms;
+    margin-top: 20px;
+    float: right;
+    margin-right: 30px;
+}
+
+.button-enviar-form:hover {
+    transform: scale(1.15);
+}
+
+.aside-box-contactos {
+    justify-content: space-between;
+    box-sizing: 20px;
+    background-color: var(--color-primario);
+    padding: 150px;
+    display: flexbox;
+    box-sizing: 500px;
+    font-size: x-large;
+}
+
+#text {
+    font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    font-style: normal;
+
+    margin-left: 6px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 2px;
+}
+
+.button-redes {
+    width: 50px;
+    align-content: center;
+    padding: 30px;
+}
+
+
+.button-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2%;
 }
