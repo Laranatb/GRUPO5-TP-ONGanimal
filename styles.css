@@ -20,15 +20,6 @@ a {
     text-decoration: none;
 }
 
-
-/* Header */
-header {
-   
-   
-}
-
-
-
 /* Header */
 header{
     width: 100%;
@@ -38,8 +29,6 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
-
 }
 
 header img {
@@ -53,11 +42,9 @@ header nav {
 }
 
 header nav a {
-    background: none;
     color: var(--color-texto);
     font-size: 20px;
     text-decoration: none;
-
 }
 
 header nav a:hover {
@@ -73,6 +60,18 @@ header nav a:hover {
 
 .w-big{
     width: 80%;
+}
+
+.w-medium{
+    width: 60%;
+}
+
+.w.small{
+    width: 40%;
+}
+
+.w-min{
+    width: 20%;
 }
 
 
@@ -205,7 +204,6 @@ aside {
     font-size: 60px;
 }
 
-
 /* Button */
 
 .button {
@@ -235,7 +233,6 @@ aside {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    padding: 10px 0;
 }
 
 .hero-info {
@@ -263,7 +260,7 @@ aside{
     align-items: center;
     justify-content: center;
     gap: 30px;
-    background: var(--color-primario-oscuro);
+    background: var(--color-bg-primario);
 }
 
 .aside-content{
@@ -393,6 +390,12 @@ Esta es la clase principal o base de las cards
     border: 1px;
 }
 
+
+.historia{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
 
 
 /*PD: despues con mas tiempo les comento bien el codigo asi tienen una referencia de para que sirve
