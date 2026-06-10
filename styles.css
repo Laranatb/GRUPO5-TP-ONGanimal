@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100%;
     --color-bg: #E8E6DA;
     --color-primario: #EBCE8F;
     --color-secundario: #DABEEA;
@@ -17,8 +18,18 @@ body {
 }
 
 a {
+    color: var(--color-texto-oscuro);
+    font-weight: 500;
     text-decoration: none;
 }
+
+
+.link-animation:hover{
+    transition: all 100ms ;
+    color: rgb(163, 87, 163);
+    
+}
+
 
 /* Header */
 header {
