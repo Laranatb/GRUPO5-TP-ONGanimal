@@ -20,7 +20,6 @@ a {
     text-decoration: none;
 }
 
-
 /* Header */
 header {
     width: 100%;
@@ -43,17 +42,81 @@ header nav {
 }
 
 header nav a {
-    background: none;
-    color: var(--color-texto);
+    color: var(--color-texto-claro);
     font-size: 20px;
     text-decoration: none;
-
 }
 
 header nav a:hover {
     transition: all 0.1s;
     transform: scale(1.1);
 }
+
+/* Width */
+
+.w-full {
+    width: 100%;
+}
+
+.w-big {
+    width: 80%;
+}
+
+.w-medium{
+    width: 60%;
+}
+
+.w.small{
+    width: 40%;
+}
+
+.w-min{
+    width: 20%;
+}
+
+
+/* Icons */
+
+.icon-small{
+    width: 20px;
+
+}
+
+.icon-medium{
+    width: 60px;
+}
+
+.icon-big{
+    width: 80px;
+}
+/* Main */
+
+/* Width */
+
+.w-full{
+    width: 100%;
+}
+
+.w-big{
+    width: 80%;
+}
+
+
+/* Icons */
+
+.icon-small {
+    width: 40px;
+}
+
+.icon-medium {
+    width: 60px;
+}
+
+.icon-big {
+    width: 80px;
+}
+
+/* Main */
 
 /* Width */
 
@@ -102,6 +165,105 @@ aside {
 }
 
 .aside-content {
+    width: 50%;
+}
+
+
+.aside-content strong {
+    font-size: 26px;
+}
+
+.aside-content span {
+    display: block;
+}
+
+
+/* Texto */
+
+.title-section {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0 0 40px 0;
+}
+
+.text-xs {
+    font-size: 14px;
+
+}
+
+.text-sm {
+    font-size: 20px;
+}
+
+.text-lg {
+    font-size: 40px;
+}
+
+.text-xl {
+    font-size: 60px;
+}
+
+/* Button */
+
+.button {
+    padding: 10px 20px;
+    border: 1px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: all 200ms;
+}
+
+.button:hover {
+    transform: scale(1.15);
+}
+
+
+.button-white {
+    background: var(--color-bg-primario);
+}
+
+.button-black {
+    background: var(--color-secundario);
+}
+
+/* Hero */
+
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero-info {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.hero-info h1 {
+    font-size: 40px;
+}
+
+.hero-info p {
+    font-size: 20px;
+}
+
+
+
+/* Aside */
+
+aside{
+    display: flex;
+    padding: 20px 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background: var(--color-bg-primario);
+}
+
+.aside-content{
     width: 50%;
 }
 
@@ -211,6 +373,7 @@ aside {
 
 
 
+
 /* 
 Esta es la clase principal o base de las cards 
 
@@ -244,6 +407,12 @@ Esta es la clase principal o base de las cards
     border: 1px;
 }
 
+
+.historia{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
 
 
 /*PD: despues con mas tiempo les comento bien el codigo asi tienen una referencia de para que sirve
