@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100%;
     --color-bg: #E8E6DA;
     --color-primario: #EBCE8F;
     --color-secundario: #DABEEA;
@@ -17,18 +18,26 @@ body {
 }
 
 a {
+    color: var(--color-texto-oscuro);
+    font-weight: 500;
     text-decoration: none;
 }
 
+.link-animation:hover{
+    transition: all 100ms ;
+    color: rgb(163, 87, 163);
+    
+}
+
 /* Header */
-header{
+header {
     width: 100%;
-    background: var(--color-primario-claro);
     background: var(--color-primario-claro);
     padding: 12px 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
+
 }
 
 header img {
@@ -52,6 +61,10 @@ header nav a:hover {
     transform: scale(1.1);
 }
 
+.m-2{
+    justify-content: center;
+    margin-left: 50%;
+}
 /* Width */
 
 .w-full{
@@ -289,26 +302,27 @@ aside{
 
 /* Button */
 
-.button{
+.button {
     padding: 10px 20px;
-    border: 1px ;
+    border: 1px;
     border-radius: 10px;
     font-size: 18px;
     transition: all 200ms;
 }
 
-.button:hover{
+.button:hover {
     transform: scale(1.15);
 }
 
 
-.button-white{
-    background: #5f855f;
+.button-white {
+    background: var(--color-bg-primario);
 }
 
-.button-black{
-    background: rebeccapurple;   
+.button-black {
+    background: var(--color-secundario);
 }
+
 
 /* Hero */
 
@@ -464,33 +478,36 @@ form {
 }
 
 textarea {
-    width: 100px;
-    height: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px 15px 10px;
+    width: 400px;
+    height: 238px;
+    background-color: #FFFF;
+    padding: 10px 100px;
+    padding-left: 15px;
     justify-content: center;
-    border: solid black 2px;
+    align-items: first baseline;
     border-radius: 15px;
+    border: solid black 2px;
+    margin-right: auto 100%;
+    font-size: large;
 
+
+}
+
+.button {
+    padding: 10px 20px;
+    border: 1px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: all 200ms;
 }
 
 .button-enviar-form {
     background-color: var(--color-secundario);
-    padding: 10px 15px;
-    border-radius: 10px;
     border-color: #DABEEA;
-    font-size: 18px;
-    transition: all 200ms;
     margin-top: 20px;
     float: right;
-    margin-right: 30px;
 }
 
-.button-enviar-form:hover {
-    transform: scale(1.15);
-}
 
 .aside-box-contactos {
     justify-content: space-between;
@@ -506,8 +523,11 @@ textarea {
     font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: larger;
     font-style: normal;
-
     margin-left: 6px;
+}
+
+textarea{
+    padding: ;
 }
 
 footer {
@@ -530,4 +550,10 @@ footer {
     justify-content: space-between;
     align-items: center;
     margin: 2%;
+}
+
+#copy{
+    justify-content: left;
+    display: flexbox;
+
 }
