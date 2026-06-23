@@ -51,7 +51,7 @@ header nav {
 }
 
 header nav a {
-    color: var(--color-texto);
+    color: var(--color-texto-claro);
     font-size: 20px;
     text-decoration: none;
 }
@@ -67,11 +67,11 @@ header nav a:hover {
 }
 /* Width */
 
-.w-full{
+.w-full {
     width: 100%;
 }
 
-.w-big{
+.w-big {
     width: 80%;
 }
 
@@ -117,18 +117,18 @@ header nav a:hover {
 
 /* Icons */
 
-.icon-small{
-    width: 20px;
-
+.icon-small {
+    width: 40px;
 }
 
-.icon-medium{
+.icon-medium {
     width: 60px;
 }
 
-.icon-big{
+.icon-big {
     width: 80px;
 }
+
 /* Main */
 
 /* Width */
@@ -280,24 +280,41 @@ aside{
     width: 50%;
 }
 
-.aside-content strong{
+
+.aside-content strong {
     font-size: 26px;
 }
 
-.aside-content span{
+.aside-content span {
     display: block;
 }
 
 
 /* Texto */
 
-.title-section{
-    display:block;
+.title-section {
+    display: block;
     width: 100%;
     text-align: center;
-    padding: 0  0 40px 0;
+    padding: 0 0 40px 0;
 }
 
+.text-xs {
+    font-size: 14px;
+
+}
+
+.text-sm {
+    font-size: 20px;
+}
+
+.text-lg {
+    font-size: 40px;
+}
+
+.text-xl {
+    font-size: 60px;
+}
 
 
 /* Button */
@@ -326,25 +343,25 @@ aside{
 
 /* Hero */
 
-.hero{
+.hero {
     width: 100%;
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
 }
 
-.hero-info{
+.hero-info {
     width: 35%;
     display: flex;
     flex-direction: column;
     align-items: start;
 }
 
-.hero-info h1{
+.hero-info h1 {
     font-size: 40px;
 }
 
-.hero-info p{
+.hero-info p {
     font-size: 20px;
 }
 
