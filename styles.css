@@ -308,6 +308,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
     justify-content: center;
 }
 
@@ -354,7 +355,6 @@ textarea {
     font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: larger;
     font-style: normal;
-
     margin-left: 6px;
 }
 
