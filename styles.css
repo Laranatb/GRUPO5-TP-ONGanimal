@@ -83,8 +83,6 @@ footer {
     padding: 2px;
 }
 
-
-
 /* Width */
 
 .w-full {
@@ -174,7 +172,6 @@ footer {
     padding: 30px;
 }
 
-
 .button-box {
     display: flex;
     flex-direction: row;
@@ -260,8 +257,6 @@ aside {
     text-align: center;
     font-size: 15px;
 }
-
-
 
 .card-border {
     border: 1px;
@@ -350,7 +345,6 @@ textarea {
 
 }
 
-
 .button-enviar-form {
     background-color: var(--color-secundario);
     border-color: #DABEEA;
@@ -374,7 +368,6 @@ textarea{
     display: flexbox;
 
 }
-
 
 /* Nosotros */
 
