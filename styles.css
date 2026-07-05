@@ -65,7 +65,7 @@ header nav {
 }
 
 header nav a {
-    color: var(--color-texto-claro);
+    color: var(--color-texto-oscuro);
     font-size: 20px;
     text-decoration: none;
 }
@@ -208,25 +208,35 @@ footer {
 
 aside {
     display: flex;
-    padding: 20px 40px;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    gap: 30px;
-    background: var(--color-primario-oscuro);
+    align-items: center;
+    padding: 20px 40px;
+    background: var(--color-bg-primario);
 }
 
 .aside-content {
-    width: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
+.aside-content-info{
+    display: flex;
+    flex-direction: column;
+}
 
-.aside-content strong {
+.aside-content-info strong {
     font-size: 26px;
 }
 
-.aside-content span {
+.aside-content-info span {
     display: block;
 }
+
+
 
 /* Card */
 
@@ -234,6 +244,7 @@ aside {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    gap: 40px;
     justify-content: space-around;
     align-items: start;
 }
@@ -249,9 +260,11 @@ aside {
 .card-icon {
     width: 15%;
     gap: 10px;
+    
 }
 
 .card-icon strong {
+    text-align: center;
     font-size: 20px;
     letter-spacing: 1.2px;
 }
@@ -377,7 +390,8 @@ textarea{
 /* Nosotros */
 
 .nosotros-container {
-    margin: auto;
+    margin: 30px auto auto auto;
+    
     width: 90%;
     gap: 40px;
     display: flex;
@@ -399,8 +413,315 @@ textarea{
 .equipo-container{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .rol{
     font-size: 15px
 }
+
+/* DONAR.HTML */
+
+.donar-container{
+    margin: 30px auto auto auto;
+    width: 80%;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Proyectos.html */
+
+.proyectos-container{
+    margin: 30px auto auto auto;
+    width: 90%;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.proyect-hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.proyect-hero span{
+    text-align: center;
+    font-size: 20px;
+}
+
+.proyect-card{
+    width: 30%;
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.proyect-card img{
+    width: 100%;
+}
+
+.proyect-info{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: start;
+}
+
+.proyect-info strong{
+    font-size: 25px;
+}
+
+.proyect-info p{
+    font-size: 15px;
+}
+
+/* ALERT */
+
+#alert-container{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    z-index: 9999;
+}
+
+.alert{
+    width:380px;
+    min-height:75px;
+    display:flex;
+    align-items:center;
+    gap:18px;
+    padding:18px 20px;
+    border-radius:10px;
+    color:#fff;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    animation:showAlert .35s ease;
+    transition:
+        opacity .3s,
+        transform .3s;
+}
+
+/* Icono */
+
+.alert-icon{
+    width:46px;
+    height:46px;
+    border:3px solid rgba(255,255,255,.8);
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+    font-weight:bold;
+    flex-shrink:0;
+}
+
+/* Texto */
+
+.alert-content{
+    flex:1;
+}
+
+.alert-content h4{
+    font-size:20px;
+    margin-bottom:4px;
+}
+
+.alert-content p{
+    font-size:14px;
+    opacity:.95;
+}
+
+/* Botón cerrar */
+
+.alert-close{
+    background:none;
+    border:none;
+    color:white;
+    font-size:22px;
+    cursor:pointer;
+    opacity:.8;
+    transition:.2s;
+}
+
+.alert-close:hover{
+    opacity:1;
+    transform:scale(1.15);
+}
+
+/* Tipos */
+
+.success{
+    background:#8fd36b;
+}
+
+.error{
+    background:#e74c3c;
+}
+
+.warning{
+    background:#f39c12;
+}
+
+.info{
+    background:#3498db;
+}
+
+/* Animación */
+
+@keyframes showAlert{
+    from{
+        opacity:0;
+        transform:translateY(-20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero-info h1 {
+    font-size: 40px;
+    }
+
+    .hero-info p {
+        font-size: 25px;
+    }
+
+    .historia h2{
+        font-size: 35px;
+    }
+    .historia p{
+        font-size: 20px;
+    }
+
+    .card-icon {
+        width: 25%;
+        gap: 15px;
+    }
+
+    .card-icon strong {
+        font-size: 30px;
+        letter-spacing: 1.2px;
+    }
+
+     .negrita-large{
+        font-size:  25px !important;
+    }
+
+    .card-icon span {
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-info h1 {
+    font-size: 35px;
+    }
+
+    .hero-info p {
+        font-size: 20px;
+    }
+
+    .historia h2{
+        font-size: 30px;
+    }
+    .historia p{
+        font-size: 15px;
+    }
+
+    .card-icon {
+        width: 20%;
+        gap: 10px;
+    }
+
+    .card-icon strong {
+        font-size: 25px;
+        letter-spacing: 1.2px;
+    }
+
+     .negrita-large{
+        font-size:  13px !important;
+    }
+
+    .card-icon span {
+        text-align: center;
+        font-size: 15px;
+    }
+   
+    .proyect-card{
+        width: 45%;
+    }
+
+    .proyect-info strong{
+        font-size: 20px;
+    }
+
+    .proyect-info p{
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .hero-info h1 {
+    font-size: 25px;
+    }
+
+    .hero-info p {
+        font-size: 13px;
+    }
+
+    .historia h2{
+        font-size: 20px;
+    }
+    .historia p{
+        font-size: 13px;
+    }
+
+    .card-icon {
+        width: 10%;
+        gap: 10px;
+    }
+
+    .card-icon strong {
+        font-size: 15px;
+        letter-spacing: 1.2px;
+    }
+
+    .card-icon span {
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .proyect-card{
+        width: 100%;
+    }
+
+    .proyect-info strong{
+        font-size: 20px;
+    }
+
+    .proyect-info p{
+        font-size: 15px;
+    }
+    
+}
+

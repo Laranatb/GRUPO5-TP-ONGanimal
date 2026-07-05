@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <a href="../index.html"><img class="icon-medium" src="../imagenes/logo-huella.png" alt="logo" /></a>
+        <a href="../index.html"><img class="icon-medium" src="../img/logo-huella.png" alt="logo" /></a>
         <nav>
             <a href="../index.html">Inicio</a>
             <a href="./nosotros.html">Nosotros</a>
@@ -20,7 +20,9 @@
         </nav>
     </header>
 
-    <main>
+
+    <div id="alert-container"></div>
+    <main class="donar-container">
         <article class="hero">
             <div class="hero-info">
                 <h1>Tu ayuda cambia vidas</h1>
@@ -34,33 +36,36 @@
             <h2 class="title-section">¿Cómo puedes donar?</h2>
             <section class="card card-icon">
                 <img src="../img/icons/card.svg" alt="icon-tarjeta" class="icon-medium" />
-                <strong>Donación única</strong>
+                <strong class="negrita-large">Donación única</strong>
                 <span>Elegí el monto y hace una donación por única vez.</span>
             </section>
             <section class="card card-icon">
                 <img src="../img/icons/refresh.svg" alt="icon-reload" class="icon-medium" />
-                <strong>Donación mensual</strong>
+                <strong class="negrita-large">Donación mensual</strong>
                 <span>Sumate con un aporte mensual y ayúdanos a planificar mejor.</span>
             </section>
             <section class="card card-icon">
                 <img src="../img/icons/bank.svg" alt="icon-tarjeta" class="icon-medium" />
-                <strong>Transferencia bancaria</strong>
+                <strong class="negrita-large">Transferencia bancaria</strong>
                 <span>También puedes donar por transferencia o depósito bancario.</span>
             </section>
         </article>
         <!-- Cierre del main / Aside -->
-        <aside>
+
+    </main>
+    <aside style="margin-top: 50px;">
+        <div class="aside-content">
             <img src="../img/icons/heart.svg" alt="icon-corazon" class="icon-big" />
-            <div class="aside-content">
+            <div class="aside-content-info">
                 <strong>Cada aporte, por más pequeño que sea,
                     <span>marca una gran diferencia</span>
                 </strong>
-
             </div>
-        </aside>
-    </main>
 
+        </div>
+    </aside>
     <footer>
+
         <div class="button-box">
             <img class="icon-medium" src="../imagenes/logo-huella.png" alt="logo" />
             <nav>
@@ -80,6 +85,7 @@
         </div>
     </footer>
     <span id="copy">©Copyright reserved </span>
+    <script src="../main.js"></script>
 </body>
 
 </html>
