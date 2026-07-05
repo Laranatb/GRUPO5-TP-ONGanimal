@@ -3,8 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    max-width: 100%;
     --color-bg: #E8E6DA;
     --color-primario: #EBCE8F;
     --color-secundario: #DABEEA;
@@ -17,12 +15,23 @@ body {
     font-family: 'Open Sans';
 }
 
+/* Etiquetas HTML */
+
 a {
     color: var(--color-texto-oscuro);
     font-weight: 500;
     text-decoration: none;
 }
 
+h1 {
+    font-size: xx-large;
+    background-color: var(--color-secundario);
+    padding: 10px;
+    text-align: center;
+}
+
+/* Animaciones linkeado */
+
 .link-animation:hover {
     transition: all 100ms;
     color: rgb(163, 87, 163);
@@ -32,9 +41,7 @@ a {
 .link-animation:hover {
     transition: all 100ms;
     color: rgb(163, 87, 163);
-
 }
-
 
 /* Header */
 header {
@@ -58,7 +65,7 @@ header nav {
 }
 
 header nav a {
-    color: var(--color-texto-oscuro);
+    color: var(--color-texto-claro);
     font-size: 20px;
     text-decoration: none;
 }
@@ -68,9 +75,12 @@ header nav a:hover {
     transform: scale(1.1);
 }
 
-.m-2 {
-    justify-content: center;
-    margin-left: 50%;
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 2px;
 }
 
 /* Width */
@@ -95,40 +105,6 @@ header nav a:hover {
     width: 20%;
 }
 
-
-/* Icons */
-
-.icon-small {
-    width: 20px;
-
-}
-
-.icon-medium {
-    width: 60px;
-}
-
-.icon-big {
-    width: 80px;
-}
-
-/* Main */
-
-.m-2 {
-    justify-content: center;
-    margin-left: 50%;
-}
-
-/* Width */
-
-.w-full {
-    width: 100%;
-}
-
-.w-big {
-    width: 80%;
-}
-
-
 /* Icons */
 
 .icon-small {
@@ -143,108 +119,89 @@ header nav a:hover {
     width: 80px;
 }
 
-/* Main */
+/* Texto */
 
-/* Width */
-
-.w-full {
+.title-section {
+    display: block;
     width: 100%;
+    text-align: center;
+    padding: 0 0 40px 0;
 }
 
-.w-big {
-    width: 80%;
-}
-
-.w-medium {
-    width: 60%;
-}
-
-.w.small {
-    width: 40%;
-}
-
-.w-min {
-    width: 20%;
-}
-
-
-/* Icons */
-
-.icon-small {
-    width: 20px;
+.text-xs {
+    font-size: 14px;
 
 }
 
-.icon-medium {
-    width: 60px;
+.text-sm {
+    font-size: 20px;
 }
 
-.icon-big {
-    width: 80px;
+.text-lg {
+    font-size: 40px;
 }
 
-/* Main */
+.text-xl {
+    font-size: 60px;
+}
 
-/* Width */
+/* Button */
 
-.w-full {
+.button {
+    padding: 10px 20px;
+    border: 1px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: all 200ms;
+}
+
+.button:hover {
+    transform: scale(1.15);
+}
+
+.button-white {
+    background: var(--color-bg-primario);
+}
+
+.button-black {
+    background: var(--color-secundario);
+}
+
+.button-redes {
+    width: 50px;
+    align-content: center;
+    padding: 30px;
+}
+
+.button-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2%;
+}
+
+/* Hero */
+
+.hero {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.w-big {
-    width: 80%;
-}
-
-
-/* Icons */
-
-.icon-small {
-    width: 40px;
-}
-
-.icon-medium {
-    width: 60px;
-}
-
-.icon-big {
-    width: 80px;
-}
-
-/* Main */
-
-/* Width */
-
-.w-full {
-    width: 100%;
-}
-
-.w-big {
-    width: 80%;
-}
-
-
-/* Icons */
-
-.icon-small {
-    width: 40px;
-}
-
-.icon-medium {
-    width: 60px;
-}
-
-.icon-big {
-    width: 80px;
-}
-
-/* Main */
-
-main {
-    width: 100px 100px 100px;
-    margin-top: 100px;
+.hero-info {
+    width: 35%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    align-items: start;
+}
+
+.hero-info h1 {
+    font-size: 40px;
+}
+
+.hero-info p {
+    font-size: 20px;
 }
 
 /* Aside */
@@ -271,189 +228,7 @@ aside {
     display: block;
 }
 
-
-/* Texto */
-
-.title-section {
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 0 0 40px 0;
-}
-
-.text-xs {
-    font-size: 14px;
-
-}
-
-.text-sm {
-    font-size: 20px;
-}
-
-.text-lg {
-    font-size: 40px;
-}
-
-.text-xl {
-    font-size: 60px;
-}
-
-/* Button */
-
-.button {
-    padding: 10px 20px;
-    border: 1px;
-    border-radius: 10px;
-    font-size: 18px;
-    transition: all 200ms;
-}
-
-.button:hover {
-    transform: scale(1.15);
-}
-
-
-.button-white {
-    background: var(--color-bg-primario);
-}
-
-.button-black {
-    background: var(--color-secundario);
-}
-
-/* Hero */
-
-.hero {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.hero-info {
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-}
-
-.hero-info h1 {
-    font-size: 40px;
-}
-
-.hero-info p {
-    font-size: 20px;
-}
-
-
-
-/* Aside */
-
-aside {
-    display: flex;
-    padding: 20px 40px;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    background: var(--color-bg-primario);
-}
-
-.aside-content {
-    width: 50%;
-}
-
-
-.aside-content strong {
-    font-size: 26px;
-}
-
-.aside-content span {
-    display: block;
-}
-
-
-/* Texto */
-
-.title-section {
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 0 0 40px 0;
-}
-
-.text-xs {
-    font-size: 14px;
-
-}
-
-.text-sm {
-    font-size: 20px;
-}
-
-.text-lg {
-    font-size: 40px;
-}
-
-.text-xl {
-    font-size: 60px;
-}
-
-
-/* Button */
-
-.button {
-    padding: 10px 20px;
-    border: 1px;
-    border-radius: 10px;
-    font-size: 18px;
-    transition: all 200ms;
-}
-
-.button:hover {
-    transform: scale(1.15);
-}
-
-
-.button-white {
-    background: var(--color-bg-primario);
-}
-
-.button-black {
-    background: var(--color-secundario);
-}
-
-
-/* Hero */
-
-.hero {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 0;
-}
-
-.hero-info {
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-}
-
-.hero-info h1 {
-    font-size: 40px;
-}
-
-.hero-info p {
-    font-size: 20px;
-}
-
-
-
-/* 
-    Esta clase esta echa para usarse como contenedora de las "cards"
-    sean cuadradas o redondas 
-
-    Estan de manera horiontal una de la otra
-*/
+/* Card */
 
 .container-cards {
     width: 100%;
@@ -461,18 +236,6 @@ aside {
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
-/* Esta es una clase para los titulos de las secciones 
-    Ocupan toda una fila de la paginas (100%)
-*/
-
-
-
-
-/* 
-Esta es la clase principal o base de las cards 
-
-*/
 
 .card {
     display: flex;
@@ -496,24 +259,11 @@ Esta es la clase principal o base de las cards
     font-size: 15px;
 }
 
-
-
 .card-border {
     border: 1px;
 }
 
-
-.historia {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-
-
-/*PD: despues con mas tiempo les comento bien el codigo asi tienen una referencia de para que sirve
-pero bueno otro dia lo hago tkm <3
-*/
-
+/* Contacto */
 .container-contacto {
     display: flex;
     padding: 30px 30px 30px;
@@ -548,12 +298,17 @@ pero bueno otro dia lo hago tkm <3
     width: 900%;
 }
 
-h1 {
-    font-size: xx-large;
-    background-color: var(--color-secundario);
-    padding: 10px;
-    text-align: center;
+.aside-box-contactos {
+    justify-content: space-between;
+    box-sizing: 20px;
+    background-color: var(--color-primario);
+    padding: 150px;
+    display: flexbox;
+    box-sizing: 500px;
+    font-size: x-large;
 }
+
+/* Fromularios input, etc... */
 
 input {
     width: 400px;
@@ -591,31 +346,11 @@ textarea {
 
 }
 
-.button {
-    margin: 10px;
-    padding: 10px 20px;
-    border: 1px;
-    border-radius: 10px;
-    font-size: 18px;
-    transition: all 200ms;
-}
-
 .button-enviar-form {
     background-color: var(--color-secundario);
     border-color: #DABEEA;
     margin-top: 20px;
     float: right;
-}
-
-
-.aside-box-contactos {
-    justify-content: space-between;
-    box-sizing: 20px;
-    background-color: var(--color-primario);
-    padding: 150px;
-    display: flexbox;
-    box-sizing: 500px;
-    font-size: x-large;
 }
 
 #text {
@@ -625,32 +360,29 @@ textarea {
     margin-left: 6px;
 }
 
-textarea {}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px;
-    padding: 2px;
-}
-
-.button-redes {
-    width: 50px;
-    align-content: center;
-    padding: 30px;
-}
-
-
-.button-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 2%;
+textarea {
+    padding: ;
 }
 
 #copy {
     justify-content: left;
     display: flexbox;
 
+}
+
+/* Nosotros */
+
+.nosotros-container {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.historia {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
