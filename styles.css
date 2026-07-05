@@ -203,6 +203,7 @@ footer {
     font-size: 20px;
 }
 
+
 /* Aside */
 
 aside {
@@ -234,6 +235,7 @@ aside {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: start;
 }
 
 .card {
@@ -243,6 +245,7 @@ aside {
     justify-content: center;
 }
 
+/* Card Icons */
 .card-icon {
     width: 15%;
     gap: 10px;
@@ -257,6 +260,8 @@ aside {
     text-align: center;
     font-size: 15px;
 }
+
+
 
 .card-border {
     border: 1px;
@@ -373,15 +378,29 @@ textarea{
 
 .nosotros-container {
     margin: auto;
-    width: 80%;
+    width: 90%;
+    gap: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.historia{
+.historia-container{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+.historia {
+    width: 60%;
+}
+
+
+.equipo-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rol{
+    font-size: 15px
 }
