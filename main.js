@@ -8,20 +8,20 @@ const dataAlert = {
         status: "success",
 
     },
-     error: {
+    error: {
         icon: "✕",
         title: "Error",
         msg: "Hubo un problema al enviar el formulario.",
         status: "error",
-        
+
     },
-     alert: {
+    alert: {
         icon: "!",
         title: "Atención",
         msg: "Faltan completar algunos campos obligatorios.",
         status: "warning",
     },
-    info:{
+    info: {
         icon: "i",
         title: "Información",
         msg: "Estamos procesando tu solicitud.",
@@ -62,7 +62,7 @@ const mostrarAlerta = (data, timeAlert = 3000) => {
     }, timeAlert);
 }
 
-const removerAlert = (alert) =>{
+const removerAlert = (alert) => {
 
     alert.style.opacity = "0";
     alert.style.transform = "translateX(100px)";
@@ -73,7 +73,7 @@ const removerAlert = (alert) =>{
 
 }
 
-function prueba () {
+function prueba() {
     mostrarAlerta(dataAlert.aprobado);
     mostrarAlerta(dataAlert.error);
     mostrarAlerta(dataAlert.alert);
