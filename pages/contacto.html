@@ -45,13 +45,12 @@
             </article>
 
             <article>
-                <form action="post">
-                    <input placeholder="Nombre y Apellido" type="text"><br>
-                    <input placeholder="E-mail" type="email"><br>
-                    <input placeholder="Asunto" type="text"><br>
-                    <textarea placeholder="Mensaje" name="Mensaje" id=""></textarea>
-                    <!-- <input placeholder="  Mensaje" type="text"><br> -->
-                    <button class="button button-enviar-form">Enviar</button>
+                <form id="formulario-contacto" action="#">
+                    <input placeholder="Nombre y Apellido" type="text" id="nombre"><br>
+                    <input placeholder="E-mail" type="text" id="email"><br>
+                    <input placeholder="Asunto" type="text" id="asunto"><br>
+                    <textarea placeholder="Mensaje" name="Mensaje" id="mensaje"></textarea>
+                    <button type="submit" class="button button-enviar-form">Enviar</button>
                 </form>
             </article>
 
@@ -87,7 +86,7 @@
         </div>
     </footer>
     <span id="copy">©Copyright reserved </span>
-
+    <script src="../main.js"></script>
 </body>
 
 </html>
