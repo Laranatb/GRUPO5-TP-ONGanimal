@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <img src="./img/logo-huella.png" alt="logo" />
+        <img src="./img/logo-huella.png" alt="logo" class="icon-medium" />
         <nav>
             <a href="./index.html">Inicio</a>
             <a href="./pages/nosotros.html">Nosotros</a>
@@ -28,8 +28,8 @@
                 <h1>Dales una segunda oportunidad</h1>
                 <p id="text">Trabajamos por el bienestar y la protección de los animales.</p>
                 <div class="doble-button-box">
-                    <button class="button button-center">Adoptar</button>
-                    <button class="button button-center">Donar</button>
+                    <button class="button button-center button-white">Adoptar</button>
+                    <button class="button button-center button-black">Donar</button>
                 </div>
             </div>
             <div class="w-small">
@@ -38,45 +38,47 @@
         </article>
 
         <!-- segundo articulo, quienes somos -->
-        <article class="container-cards">
+        <article class="container-cards" style="gap: 70px;">
             <h2 class="title-section">¿Quienes somos?</h2>
             <span class="contacto-info">Somos una organización sin fines de lucro que rescata, protege y
                 promueve el bienestar animal a través de programas de rescate, educación y adopción consciente
                 y responsable.
             </span>
-            <button class="button">Conocenos más</button>
+            <a href="./pages/contacto.html">
+                <button class="button-white button">Conocenos más</button>
+            </a>
 
         </article>
-        <article class="content-column">
+        <article class="content-column" style="gap: 30px;">
             <h2 class="title-section">Nuestros proyectos destacados</h2>
             <div class="container-cards">
 
                 <section class="card card-icon">
-                    <img src="" alt="imagen-1" class="icon-medium">
+                    <img src="/img/voluntariado.png" alt="imagen-1" class="w-xsmall">
                     <h3>Rescate y refugio</h3>
                     <span>Rescatamos animales en situaciones de abandono</span>
                 </section>
 
                 <section class="card card-icon">
-                    <img src="" alt="imagen-2" class="icon-medium">
+                    <img src="/img/atencion-vet.png" alt="imagen-2" class="w-xsmall">
                     <h3>Campañas de salud</h3>
                     <span>Realizamos campañas de vacunación y esterilización</span>
                 </section>
 
                 <section class="card card-icon">
-                    <img src="" alt="imagen-3" class="icon-medium">
+                    <img src="/img/educación.png" alt="imagen-3" class="w-xsmall">
                     <h3>Educación y consciencia</h3>
                     <span>Promovemos la tenencia responsable y el respeto animal.</span>
                 </section>
             </div>
-            <button class="button button-center">
+            <button class="button button-center button-black">
                 <a href="./pages/proyectos.html">Ver todos los proyectos</a>
             </button>
         </article>
 
 
         <!-- ultimo aside -->
-        <article>
+        <aside style="width: 90%;">
             <h2 class="title-section">¿Cómo puedes ayudar?</h2>
             <div class="hero">
 
@@ -105,13 +107,13 @@
                 </section>
 
             </div>
-        </article>
+        </aside>
 
     </main>
 
     <footer>
         <div class="button-box">
-            <img class="icon-medium" src="../imagenes/logo-huella.png" alt="logo" />
+            <img class="icon-medium" src="/img/logo-huella.png" alt="logo" />
             <nav>
                 <a class="button-redes" href="https://www.facebook.com/" target="_blank"><img
                         src="../img/icons/redes/facebook.svg"></a>

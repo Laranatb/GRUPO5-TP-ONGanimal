@@ -97,8 +97,8 @@ footer {
     width: 60%;
 }
 
-.w.small {
-    width: 40%;
+.w-xsmall {
+    width: 100%;
 }
 
 .w-min {
@@ -160,7 +160,7 @@ footer {
 }
 
 .button-white {
-    background: var(--color-bg-primario);
+    background: var(--color-primario);
 }
 
 .button-black {
@@ -331,7 +331,7 @@ aside {
 input {
     width: 400px;
     background-color: #FFFF;
-    padding: 15px 0px;
+    padding: 15px 10px;
     justify-content: center;
     align-items: first baseline;
     border-radius: 15px;
@@ -346,22 +346,6 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-textarea {
-    width: 400px;
-    height: 238px;
-    background-color: #FFFF;
-    padding: 10px 100px;
-    padding-left: 15px;
-    justify-content: center;
-    align-items: first baseline;
-    border-radius: 15px;
-    border: solid black 2px;
-    margin-right: auto 100%;
-    font-size: large;
-
-
 }
 
 .button-enviar-form {
@@ -379,8 +363,8 @@ textarea {
 }
 
 textarea {
-    width: 400px;
-    height: 238px;
+    width: 305px;
+    height: 220px;
     background-color: #FFFF;
     padding: 10px 100px;
     padding-left: 15px;
@@ -838,3 +822,7 @@ textarea {
     justify-content: start;
     text-align: center;
 }
+
+/* .background-color-claro {
+    border-inline-end: solid #363636 1px;
+} */
