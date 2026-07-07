@@ -379,7 +379,17 @@ textarea {
 }
 
 textarea {
-    padding: ;
+    width: 400px;
+    height: 238px;
+    background-color: #FFFF;
+    padding: 10px 100px;
+    padding-left: 15px;
+    justify-content: center;
+    align-items: first baseline;
+    border-radius: 15px;
+    border: solid black 2px;
+    margin-right: auto 100%;
+    font-size: large;
 }
 
 #copy {
