@@ -114,10 +114,3 @@ document.addEventListener("DOMContentLoaded", () => {
         form.addEventListener("submit", validarFormulario);
     }
 });
-
-// function prueba() {
-//     mostrarAlerta(dataAlert.aprobado);
-//     mostrarAlerta(dataAlert.error);
-//     mostrarAlerta(dataAlert.alert);
-//     mostrarAlerta(dataAlert.info);
-// }
