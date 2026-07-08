@@ -10,7 +10,9 @@
 
 <body>
     <header>
-        <a href="../index.html"><img class="icon-medium" src="../imagenes/logo-huella.png" alt="logo" /></a>
+        <a href="../index.html">
+            <img class="icon-medium" src="/img/logo-huella.png" alt="logo" />
+        </a>
         <nav>
             <a href="../index.html">Inicio</a>
             <a href="./nosotros.html">Nosotros</a>
@@ -45,31 +47,31 @@
             </article>
 
             <article>
-                <form action="post">
-                    <input placeholder="Nombre y Apellido" type="text"><br>
-                    <input placeholder="E-mail" type="email"><br>
-                    <input placeholder="Asunto" type="text"><br>
-                    <textarea placeholder="Mensaje" name="Mensaje" id=""></textarea>
-                    <!-- <input placeholder="  Mensaje" type="text"><br> -->
-                    <button class="button button-enviar-form">Enviar</button>
+                <form id="formulario-contacto" action="#">
+                    <input placeholder="Nombre y Apellido" type="text" id="nombre"><br>
+                    <input placeholder="E-mail" type="text" id="email"><br>
+                    <input placeholder="Asunto" type="text" id="asunto"><br>
+                    <textarea placeholder="Mensaje" name="Mensaje" id="mensaje"></textarea>
+                    <button type="submit" class="button button-enviar-form">Enviar</button>
                 </form>
             </article>
 
         </section>
 
-        <section>
-            <div class="aside-box-contactos">
+        <aside>
+            <div class="content-column">
+                <img src="/img/icons/heart.svg" alt="icono" class="icon-medium">
                 <h2>¡Sumate como voluntario!</h2>
                 <span id="text">Tu tiempo y compromiso, también cambian vidas.</span>
-                <button class="button button-enviar-form m-2">Quiero ser voluntario</button>
             </div>
-        </section>
+            <button class="button button-box button-black">Quiero ser voluntario</button>
+        </aside>
 
     </main>
 
     <footer>
         <div class="button-box">
-            <img class="icon-medium" src="../imagenes/logo-huella.png" alt="logo" />
+            <img class="icon-medium" src="/img/logo-huella.png" alt="logo" />
             <nav>
                 <a class="button-redes" href="https://www.facebook.com/" target="_blank"><img
                         src="../img/icons/redes/facebook.svg"></a>
@@ -87,7 +89,7 @@
         </div>
     </footer>
     <span id="copy">©Copyright reserved </span>
-
+    <script src="../main.js"></script>
 </body>
 
 </html>

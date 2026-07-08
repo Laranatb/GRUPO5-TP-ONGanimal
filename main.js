@@ -8,24 +8,30 @@ const dataAlert = {
         status: "success",
 
     },
-     error: {
+    error: {
         icon: "✕",
         title: "Error",
         msg: "Hubo un problema al enviar el formulario.",
         status: "error",
-        
+
     },
-     alert: {
+    alert: {
         icon: "!",
         title: "Atención",
         msg: "Faltan completar algunos campos obligatorios.",
         status: "warning",
     },
-    info:{
+    info: {
         icon: "i",
         title: "Información",
         msg: "Estamos procesando tu solicitud.",
         status: "info",
+    },
+    emailInvalido: {
+        icon: "!",
+        title: "Email inválido",
+        msg: "El email debe contener '@' y '.'",
+        status: "warning",
     }
 }
 
@@ -62,7 +68,7 @@ const mostrarAlerta = (data, timeAlert = 3000) => {
     }, timeAlert);
 }
 
-const removerAlert = (alert) =>{
+const removerAlert = (alert) => {
 
     alert.style.opacity = "0";
     alert.style.transform = "translateX(100px)";
@@ -73,9 +79,38 @@ const removerAlert = (alert) =>{
 
 }
 
-function prueba () {
-    mostrarAlerta(dataAlert.aprobado);
-    mostrarAlerta(dataAlert.error);
-    mostrarAlerta(dataAlert.alert);
-    mostrarAlerta(dataAlert.info);
+
+const validarEmail = (email) => {
+    return email.includes("@") && email.includes(".");
 }
+
+const validarFormulario = (e) => {
+    e.preventDefault();
+    const campos = {
+        nombre: document.getElementById("nombre").value.trim(),
+        email: document.getElementById("email").value.trim(),
+        asunto: document.getElementById("asunto").value.trim(),
+        mensaje: document.getElementById("mensaje").value.trim(),
+    }
+
+    const hayVacios = Object.values(campos).some(valor => valor == "");
+    if (hayVacios) {
+        mostrarAlerta(dataAlert.alert);
+        return;
+    }
+    else if (!validarEmail(campos.email)) {
+        mostrarAlerta(dataAlert.emailInvalido);
+        return;
+    }
+    else {
+        mostrarAlerta(dataAlert.aprobado);
+        e.target.reset();
+    }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("formulario-contacto");
+    if (form) {
+        form.addEventListener("submit", validarFormulario);
+    }
+});
