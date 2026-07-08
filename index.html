@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
     <title>ONG Animal</title>
 </head>
 
 <body>
     <header>
-        <img src="./img/logo-huella.png" alt="logo" />
+        <img src="./img/logo-huella.png" alt="logo" class="icon-medium" />
         <nav>
             <a href="./index.html">Inicio</a>
             <a href="./pages/nosotros.html">Nosotros</a>
@@ -19,48 +20,122 @@
         </nav>
     </header>
 
-    <main>
+    <main class="container-index">
 
-    </main>
+        <!-- Primer articulo -->
+        <article class="hero-index">
+            <div class="hero-info-index title-index">
+                <h1>Dales una segunda oportunidad</h1>
+                <p id="text">Trabajamos por el bienestar y la protección de los animales.</p>
+                <div class="doble-button-box">
+                    <a href="/pages/contacto.html">
+                        <button class="button button-center button-white">Adoptar</button>
+                    </a>
+                    <a href="/pages/donar.html">
+                        <button class="button button-center button-black">Donar</button>
+                    </a>
+                </div>
+            </div>
+            <div class="w-small">
+                <img src="img/ayuda-perritofeliz.png" alt="img-principal">
+            </div>
+        </article>
+
+        <!-- segundo articulo, quienes somos -->
+        <article class="container-cards" style="margin-top: 60px" ;>
+            <h2 class=" title-section">¿Quienes somos?</h2>
+            <span class="contacto-info">Somos una organización sin fines de lucro que rescata, protege y
+                promueve el bienestar animal a través de programas de rescate, educación y adopción consciente
+                y responsable.
+            </span>
+            <a href="./pages/contacto.html">
+                <button class="button-white button">Conocenos más</button>
+            </a>
+
+        </article>
+        <article class="content-column" style="margin-top: 50px" ;>
+            <h2 class="title-section">Nuestros proyectos destacados</h2>
+            <div class="container-cards">
+
+                <section class="card card-icon">
+                    <img src="/img/voluntariado.png" alt="imagen-1" class="w-xsmall">
+                    <h3>Rescate y refugio</h3>
+                    <span>Rescatamos animales en situaciones de abandono</span>
+                </section>
+
+                <section class="card card-icon">
+                    <img src="/img/atencion-vet.png" alt="imagen-2" class="w-xsmall">
+                    <h3>Campañas de salud</h3>
+                    <span>Realizamos campañas de vacunación y esterilización</span>
+                </section>
+
+                <section class="card card-icon">
+                    <img src="/img/educación.png" alt="imagen-3" class="w-xsmall">
+                    <h3>Educación y consciencia</h3>
+                    <span>Promovemos la tenencia responsable y el respeto animal.</span>
+                </section>
+            </div>
+            <button class="button button-center button-black">
+                <a href="./pages/proyectos.html">Ver todos los proyectos</a>
+            </button>
+        </article>
+
+
+        <!-- ultimo aside -->
+        <aside class="aside-content">
+            <h2 class="title-section">¿Cómo puedes ayudar?</h2>
+            <div class="hero">
+
+                <section class="container-cards-index">
+                    <img src="img/icons/card-pay.svg" alt="corazon" class="icon-big icon-card-index">
+                    <div class="card-ayuda">
+                        <h4>Donar</h4>
+                        <span>Tu ayuda nos permite seguir salvando vidas.</span>
+                    </div>
+                </section>
+
+                <section class="container-cards-index">
+                    <img src="img/icons/patita.svg" alt="patita" class="icon-big icon-card-index">
+                    <div class="card-ayuda">
+                        <h4>Adoptar</h4>
+                        <span>Dale un hogar lleno de amor.</span>
+                    </div>
+                </section>
+
+                <section class="container-cards-index">
+                    <img src="img/icons/heart-handshake.svg" alt="voluntario" class="icon-big icon-card-index">
+                    <div class="card-ayuda">
+                        <h4>Ser voluntario</h4>
+                        <span>Tu tiempo también hace la diferencia.</span>
+                    </div>
+                </section>
+
+            </div>
+        </aside>
 
     </main>
 
     <footer>
-        <div>
-            <h4>Secciones</h4>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="./pages/proyectos.html">Proyectos</a></li>
-                <li><a href="./pages/donar.html">Donar</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
+        <div class="button-box">
+            <img class="icon-medium" src="/img/logo-huella.png" alt="logo" />
+            <nav>
+                <a class="button-redes" href="https://www.facebook.com/" target="_blank"><img
+                        src="../img/icons/redes/facebook.svg"></a>
+                <a class="button-redes" href="https://www.instagram.com/" target="_blank"><img
+                        src="../img/icons/redes/instagram.svg"></a>
+                <a class="button-redes" href="https:/www.x.com/" target="_blank"><img
+                        src="../img/icons/redes/twitter.svg"></a>
+            </nav>
         </div>
-        <div>
-            <h4>Redes</h4>
-            <ul>
-                <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-                <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-                <li><a href="https://x.com/" target="_blank">Twitter</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h4>Contacto</h4>
-            <ul>
-                <li><a href="https://whatsapp.com/" target="_blank">+54 11-348959023</a></li>
-                <li>info@onganimal.ong</li>
-
-            </ul>
-        </div>
-        <div>
-            <h4>Copyright</h4>
-            <ul>
-                <li></li>
-                <li></li>
-            </ul>
+        <div class="button-box">
+            <nav>
+                <a class="button-redes link-animation" href="info@onganimal.ong" target="_blank">info@onganimal.com</a>
+                <a class="button-redes link-animation" href="https://whatsapp.com/" target="_blank">+54 11-348959023</a>
+            </nav>
         </div>
     </footer>
+    <span id="copy">©Copyright reserved </span>
+
 </body>
 
 </html>
