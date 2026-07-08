@@ -739,13 +739,13 @@ textarea {
 .cards-index {
     display: flex;
     text-align: center;
-
+    align-items: center;
 }
 
 .icon-card-index {
     display: flex;
     justify-content: center;
-    align-items: center right;
+    align-items: center;
 }
 
 .content-column {
@@ -765,7 +765,9 @@ textarea {
     width: 55%;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
+    gap: 0;
 }
 
 .hero-index {
@@ -823,6 +825,227 @@ textarea {
     text-align: center;
 }
 
-/* .background-color-claro {
-    border-inline-end: solid #363636 1px;
-} */
+/* media gral */
+
+@media (max-width: 480px) {
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        align-items: center;
+    }
+
+    header nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    header nav a {
+        font-size: 16px;
+    }
+
+    h1 {
+        width: 100%;
+        padding: 16px;
+        box-sizing: border-box;
+        font-size: xx-large;
+    }
+
+    /* contacto */
+    .container-contacto {
+        flex-direction: column;
+        padding: 0;
+        gap: 20px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .contacto-info {
+        width: 100%;
+        padding: 16px;
+        box-sizing: border-box;
+        font-size: medium;
+    }
+
+    form {
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+        align-items: center;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        align-items: center;
+    }
+
+    span {
+        text-align: center;
+    }
+
+    /* cards y containers */
+
+    .hero {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        justify-content: center;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .hero-index {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .hero-info-index {
+        align-items: center;
+        text-align: justify;
+        flex-direction: column;
+    }
+
+    .w-small {
+        height: 220px;
+    }
+
+    .card-icon img {
+        width: 70px;
+    }
+
+    .aside-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .icon-card-index {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        margin: 10px 0px;
+    }
+
+    aside .hero {
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .card-ayuda {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-ayuda span {
+        font-size: small;
+    }
+
+    .card-icon span {
+        font-size: smaller;
+    }
+
+
+    .container-cards-index {
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .container-cards {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex: 1;
+        align-items: center;
+        gap: 5px;
+        text-align: start;
+        font-size: medium
+    }
+
+    .aside-box-contactos {
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+        font-size: large;
+    }
+
+    /* botones */
+    .button-enviar-form {
+        width: auto;
+        align-self: center;
+    }
+
+
+    .button-box {
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-box nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .button-box:last-child nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-box:last-child nav a {
+        white-space: nowrap;
+    }
+
+    .button-redes {
+        padding: 8px;
+    }
+
+    /* footer y copy */
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        padding: 10px;
+        margin: 0;
+    }
+
+    #copy {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        font-size: small;
+    }
+
+    /* body */
+    body,
+    html {
+        overflow-x: hidden;
+        height: auto;
+    }
+
+    main {
+        overflow-x: hidden;
+    }
+
+}
